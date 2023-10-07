@@ -1,0 +1,135 @@
+:root{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #FFFF00;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center; 
+}
+
+header .logo{
+    height: 300px;
+}
+
+header div{
+    margin: 0 auto;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #0014a9;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+header ul li a:hover{
+    border-bottom: 4px solid #0014a9;
+    transition: .5s;
+}
+
+.logo{
+   position: absolute;
+   top: -50px;
+   padding: 0;
+}
+
+#redes-sociais{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+#procedimentos{
+    background-color: #EEEEEE;
+    padding: 40px;
+}
+
+#seta{
+    margin: 0 auto;
+    display: block;
+}
+
+.separador{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.row-create{
+    display: flex;
+    flex: row;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.row-create div{
+    text-align: center;
+    align-items: center;
+}
+
+.row-create img{
+    width: 250px;
+    height: 150px;
+}
+
+.card{
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #EEEEEE;
+}
+
+.card h3{
+    font-size: 1em;
+}
+
+#contato{
+    background-color: #00275A;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#contato div{
+    width: 260px;
+    padding: 10px;
+}
+
+#contato div h3{
+    font-size: 20px;
+}
+
+#contato div p{
+    font-size: 14px;
+}
+
+footer{
+    background-color: #FDE521;
+    height: 100px;
+    padding: 40px;
+}
+
+@media screen and (max-width: 768px){
+    .row-create{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width:1107px){
+    #contato div:nth-child(1) and div:nth-child(2){
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+}
